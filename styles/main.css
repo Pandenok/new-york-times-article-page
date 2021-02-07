@@ -6,12 +6,26 @@
 
 html, body {
   margin: 0;
-  background-color: #FFEEDD;
+  /* background-color: #FFEEDD; */
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 body * {
-  padding: 10px 10px;
-  border: solid 2px goldenrod;
+  /* padding: 10px 10px; */
+  /* border: solid 1px goldenrod; */
 }
 
 /*
@@ -21,29 +35,93 @@ body * {
 */
 
 header {
-  width: 80%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* background-color: #72DDF7; */
+  /* padding: 4px 15px 2px; */
+  background-color: white;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#header-container {
+  width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background-color: #72DDF7;
-  padding: 4px 15px 2px;
+  /* background-color: #72DDF7; */
+  padding: 4px 15px 4px;
 }
 
 #start-header {
   display: flex;
+  align-items: center;
 }
 
 #start-header button {
+  display: flex;
+  align-items: center;
   margin-right: 8px;
+  padding: 9px;
+  border-radius: 3px;
+}
+
+#start-header button:hover {
+  background-color: #f7f7f7;
+}
+
+#start-header button svg {
+  width: 16px;
+  height: 16px;
+  fill: #333;
+}
+
+#start-header a {
+  margin-left: 8px;
+  font-size: 14.25px;
+  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  line-height: 19px;
 }
 
 #center-header {
   flex: 1;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#center-header svg {
+  width: 195px;
+  height: 26.5px;
 }
 
 #end-header {
   display: flex;
+}
+
+#end-header button {
+  vertical-align: middle;
+  border: 1px solid #326891;
+  background-color: #567b95;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+#end-header button:hover {
+  background-color: #326891;
 }
 
 #end-header button:first-child {
@@ -51,11 +129,11 @@ header {
 }
 
 header div {
-  background-color: #8093F1;
+  /* background-color: #8093F1; */
 }
 
 header div * {
-  background-color: #B388EB;
+  /* background-color: #B388EB; */
 }
 
 /*
@@ -65,9 +143,8 @@ header div * {
 */
 
 main {
-  width: 80%;
+  width: 85%;
   margin: 60px auto;
-  /* margin-top: 60px; */
   background-color: #FCF6B1;
 }
 
