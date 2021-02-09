@@ -330,6 +330,10 @@ article div:last-child .social-widget {
   padding-left: 60px;
 }
 
+article div:last-child .social-widget li:nth-last-child(-n+2) a:hover {
+  opacity: 100%;
+}
+
 /* 
 -------------------
   GRID
@@ -347,7 +351,6 @@ article div:last-child .social-widget {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto repeat(4, 1fr) auto;
 }
-
 
 #theory-of-inflation div:first-of-type {
   margin-bottom: 2px;
@@ -447,21 +450,113 @@ article div:last-child .social-widget {
 */
 
 nav {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
-  background-color: #A1CDF1;
+  padding-bottom: 18px;
+  /* background-color: #A1CDF1; */
   display:flex;
   flex-direction: column;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 2px solid #e2e2e2;
 }
 
 nav div:first-child {
+  margin-top: 1px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e2e2;
+}
+
+nav div:first-child svg {
+  width: 184px;
+  height: 44px;
+}
+
+nav div:first-child a:last-child {
+  margin-top: auto;
+  margin-bottom: 12px;
+  color: rgb(86, 123, 149);
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  text-decoration: none;
 }
 
 nav div:last-child {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+}
+
+nav div:last-child ul {
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+nav div:last-child ul:last-child {
+  padding-left: 15px;
+  border-left: 1px solid rgb(226, 226, 226);
+}
+
+nav div:last-child ul:last-child svg {
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+nav div:last-child ul:last-child li:nth-of-type(-n+4) a {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+nav div:last-child ul:last-child li:nth-of-type(4) a {
+  margin-bottom: 20px;
+}
+
+nav div:last-child ul:last-child li:nth-of-type(-n+4) a {
+  color: rgb(0, 0, 0);
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+nav div:last-child ul:last-child li:nth-of-type(7) {
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+nav div:last-child ul:last-child li a {
+  font-size: 11px;
+}
+
+nav div:last-child li {
+  margin-top: 9px;
+}
+
+nav div:last-child li:first-child {
+  margin-top: 13px;
+}
+
+nav div:last-child ul a {
+  color: rgb(0, 0, 0);
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+nav div:last-child ul a:hover {
+  text-decoration: underline;
 }
 
 /*
