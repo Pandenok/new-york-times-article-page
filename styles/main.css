@@ -456,7 +456,6 @@ nav {
   /* background-color: #A1CDF1; */
   display:flex;
   flex-direction: column;
-  border-bottom: 1px solid #e2e2e2;
   border-top: 2px solid #e2e2e2;
 }
 
@@ -566,18 +565,25 @@ nav div:last-child ul a:hover {
 */
 
 footer {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   padding-top: 9px;
-  background-color: #E9AFA3;
+  /* background-color: #E9AFA3; */
   border-top: 1px solid #ebebeb;
 }
 
 footer ul {
   display: flex;
   justify-content: center;
+  margin-bottom: 35px;
 }
 
 footer ul li {
   padding: 0 10px;
+}
+
+footer ul li a {
+  color: #666;
+  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-size: 11px;
 }
